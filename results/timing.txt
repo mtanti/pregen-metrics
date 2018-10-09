@@ -1,0 +1,8 @@
+pregen
+dataset architecture run pregen_time
+mscoco init 1 28
+
+postgen
+dataset architecture run beam_width lower_bound_len upper_bound_len postgen_time
+mscoco init 1 1 5 50 1246
+mscoco init 1 1 5 5 624
